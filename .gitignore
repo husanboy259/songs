@@ -18,4 +18,11 @@ users.json
 Thumbs.db
 
 cookies.txt
+youtube_cookies.txt
 musicbot_clone/
+
+# Local / downloaded
+bin/
+use_python_ytdlp
+*.m4a
+*.fdash*

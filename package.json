@@ -16,9 +16,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "telegraf": "^4.15.0",
-    "yt-dlp-wrap": "^2.3.12",
-    "dotenv": "^16.4.5"
+    "yt-dlp-wrap": "^2.3.12"
   }
 }
-
