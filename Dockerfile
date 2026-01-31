@@ -1,13 +1,11 @@
 # Music bot for Render: Node + yt-dlp + ffmpeg
 FROM node:20-bookworm-slim
 
-# Install ffmpeg and yt-dlp (needed for YouTube/Instagram/TikTok downloads)
+# Install ffmpeg and yt-dlp via apt (Debian Bookworm has both; avoids pip externally-managed-environment)
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ffmpeg \
-    python3 \
-    python3-pip \
+    yt-dlp \
     curl \
-    && pip3 install --no-cache-dir yt-dlp \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
