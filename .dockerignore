@@ -1,0 +1,13 @@
+node_modules
+.env
+.git
+*.log
+temp
+*.md
+.cursor
+.github
+deployment
+bin
+use_python_ytdlp
+*.m4a
+users.json
