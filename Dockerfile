@@ -1,7 +1,7 @@
 # Music bot for Render: Node + yt-dlp + ffmpeg
 FROM node:20-bookworm-slim
 
-# Install ffmpeg and yt-dlp via apt (Debian Bookworm has both; avoids pip externally-managed-environment)
+# Install ffmpeg and yt-dlp via apt only (no pip - Debian 12 blocks system pip)
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ffmpeg \
     yt-dlp \
